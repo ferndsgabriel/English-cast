@@ -1,0 +1,36 @@
+.main-recovery{
+    width: 100%;
+    min-height: 100vh;
+}
+.section-recovey{
+    width: 100%;
+    min-height: 100%;
+    padding: 32px;
+}
+.section-recovey img{
+    width: 100%;
+    max-width: 40px;
+    margin-bottom: 32px;
+}
+.before-logo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.section-recovey p {
+    font-size: 18px;
+}
+.form-recovery{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+@media (min-width:768px){
+    .before-logo{
+        max-width: 500px;
+        margin: auto;
+    }
+}

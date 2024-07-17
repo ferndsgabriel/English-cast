@@ -1,0 +1,187 @@
+.search-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--AllBlack);
+}
+.search-all{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: var(--Black);
+    padding: 16px;
+    padding-bottom: 120px;
+    gap: 64px;
+}
+.no-result{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    gap: 4px;
+}
+.no-result p{
+    opacity: 0.8;
+}
+
+.search-section1{
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+}
+.search-section1 .label-search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--Gray);
+    width: 100%;
+    max-width: 400px;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 25px;
+    &:focus-within{
+        border: solid 2px var(--White);
+    }
+}
+.search-section1 .label-search input {
+    width: 100%;
+    height: 100%;
+}
+.search-section1 .label-search svg{
+    font-size: 26px;
+}
+
+.search-section2{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.search-section2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: var(--Gray);
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.search-section2 .buttonSelected{
+    background-color: var(--White);
+    color: var(--AllBlack);
+}
+
+
+.search-section-playlist, .search-section-songs, .search-section-authors{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.search-section-playlist .card-container, .search-section-songs .card-container{
+    position: relative;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 12px;
+    text-align: center;
+    &:hover{    
+        background-color: var(--Overlay);
+        .playMusic{ 
+            display: flex;
+        }
+    }
+}
+.search-section-playlist .card-container .img, .search-section-songs .card-container .img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Gray);
+    font-size: 36px;
+    border-radius: 10px;
+}
+.search-section-playlist .card-container .name, .search-section-songs .card-container .name{
+    font-weight: bold;
+    font-size: 18px;
+}
+.search-section-playlist .card-container .author, .search-section-songs .card-container .author{
+    font-size: 12px;
+}
+.search-section-playlist .card-container .playMusic, .search-section-songs .card-container .playMusic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Secundary);
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    border-radius: 100%;
+    display: none;
+}
+
+.search-section-authors .card-container{
+    position: relative;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 12px;
+    text-align: center;
+    &:hover{    
+        background-color: var(--Overlay);
+    }
+}
+.search-section-authors .card-container .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 120px;
+    background-color: var(--Gray);
+    border-radius: 100%;
+    font-size: 26px;
+}
+.search-section-authors .card-container .infos{
+    align-self: flex-start;
+    text-align: start;
+}
+.search-section-authors .card-container .infos .name{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+@media (min-width:768px){
+    .search-container{
+        width: calc(100% - 90px);
+        margin-left: 90px;
+        padding: 16px 16px 16px 0px;
+    }
+    .search-all{
+        border-radius: 10px;
+    }
+}

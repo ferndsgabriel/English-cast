@@ -1,0 +1,188 @@
+.user-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--AllBlack);
+}
+.user-all{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Black);
+    padding: 16px;
+    gap: 32px;
+    padding-bottom: 120px; 
+}
+.user-section1{
+    align-self: flex-end;
+    
+}
+.user-section2{
+    background: rgb(7,117,145);
+    background: linear-gradient(180deg, rgba(7,117,145,1) 0%, rgba(255,255,255,0) 99%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 36px 12px;
+}
+.user-section2 .user-img-nick{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+}
+.user-section2 .user-img-nick .user-imgArea{
+    width: 120px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Gray);
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    font-size: 46px;
+    cursor: pointer;
+}
+.user-section2 button{
+    align-self: flex-start;
+    padding: 16px  32px;
+    border: solid 1px var(--White);
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.user-section3{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.user-section3 .playlist{
+    position: relative;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 12px;
+    &:hover{    
+        background-color: var(--Overlay);
+        .play{
+            display: flex;
+        }
+    }
+}   
+.user-section3 .playlist .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    background-color: var(--Gray);
+    font-size: 42px;
+}
+.user-section3 .playlist .data{
+    text-align: center;
+}
+.user-section3 .playlist .data p:nth-child(1){
+    font-weight: bold;
+}
+.user-section3 .playlist .data p:nth-child(2){
+    font-size: 14px;
+}
+
+.user-section3 .playlist .play{
+    display: none;
+    position: absolute;
+    background-color: var(--Secundary);
+    width: 50px;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px var(--Black);
+}
+
+
+.user-section4{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.user-section4 .audio-area{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.user-section4 .audio-area .audio{
+    position: relative;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 12px;
+    &:hover{    
+        background-color: var(--Overlay);
+        .play{
+            display: flex;
+        }
+    }
+}
+.user-section4 .audio-area .audio .play{
+    display: none;
+    position: absolute;
+    background-color: var(--Secundary);
+    width: 50px;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px var(--Black);
+}
+.user-section4 .audio-area .audio .play svg{
+    color: var(--AllBlack);
+}
+.user-section4 .audio-area .audio img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+}
+.user-section4 .audio-area .audio .legends{
+    text-align: center;
+}
+.user-section4 .audio-area .audio .legends span{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (min-width:768px){
+    .user-container{
+        width: calc(100% - 90px);
+        margin-left: 90px;
+        padding: 16px 16px 16px 0px;
+        
+    }
+    .user-all{
+        border-radius: 10px;
+    }
+}

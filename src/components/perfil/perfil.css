@@ -1,0 +1,69 @@
+.openSettings {
+    cursor: pointer;
+}
+
+.openSettings .Photo-user{
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 100%;
+}
+
+.openSettings .settingsPefil{
+    background: var(--AllBlack);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 360px;
+    box-shadow: 2px 2px 10px var(--AllBlack);
+    padding: 16px;
+    z-index: 999999999999;
+}
+.openSettings .settingsPefil .options{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--Black);
+    }
+}
+.openSettings .settingsPefil .options:nth-child(3){
+    border-top: 1px var(--Black) solid;
+}
+
+
+@media (min-width:768px){
+    .openSettings {
+        position: relative;
+    }
+    .openSettings .settingsPefil{
+        background: var(--AllBlack);
+        position: absolute;
+        top: inherit;
+        left: inherit;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 200px;
+        height: auto;
+        border-radius: 3px;
+        margin-top: 8px;
+        box-shadow: 2px 2px 10px var(--AllBlack);
+    }
+}

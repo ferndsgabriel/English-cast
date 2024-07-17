@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-out;
+    user-select: none;
+}
+
+:root{
+    --Black:#161616;
+    --AllBlack:#000000;
+    --White:#ffff;
+    --Gray:#585858;
+    --Secundary:#077591;
+    --Error:#c93737;
+    --Sucess:#009c2f;
+    --Overlay:#000000a9;
+}
+
+html, body{
+    background-color: var(--Black);
+    color: var(--White);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-gradiente{
+    background: rgb(38,38,38);
+    background: -moz-linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(33,33,33,1) 8%, rgba(22,22,22,1) 51%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(33,33,33,1) 8%, rgba(22,22,22,1) 51%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(33,33,33,1) 8%, rgba(22,22,22,1) 51%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#262626",endColorstr="#000000",GradientType=1);
+}
+
+h1{
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+button, input,a, select, option {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 16px;
+}
+
+input:-webkit-autofill {
+    transition: 999999999999999999999999999999999999999999999999s;
+}
+
+.spinner{
+    margin: auto;
+    margin-top: 16px;
+    animation: spinner .8s infinite;
+    cursor: not-allowed;
+    color: var(--Secundary);
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    cursor: pointer;
+}
+.label-input span{
+    font-weight: bold;
+}
+
+.input-area{
+    width: 100%;
+    border: solid 1px var(--Gray);
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:focus-within{
+        border: var(--White) solid 4px;
+    }
+}
+.input-area svg{
+    font-size: 20px;
+    color: var(--Gray);
+    &:hover{
+        color: var(--White);
+    }
+}
+
+.label-input input{
+    width: 100%;
+    color: var(--White);
+    &::placeholder{
+        color: var(--Gray);
+    }
+}
+.button-login{
+    background-color: var(--Secundary);
+    color: var(--White);
+    padding: 16px;
+    border-radius: 25px;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.card-error{
+    width: 100%;
+    padding: 16px;
+    background-color: var(--Error);
+}
+.card-sucess{
+    width: 100%;
+    padding: 16px;
+    background-color: var(--Sucess);
+}
+
+
+.modal-default{
+    background-color: var(--Black);
+    width: 100vw;
+    max-width: 460px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 24px;
+    gap: 24px
+}
+.modal-after-title{
+    width: 100%;
+    padding: 32px 0px;
+    border-bottom: 1px solid var(--Gray);
+    border-top: 1px solid var(--Gray);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+}
+.modal-label span{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.modal-label  input{
+    width: 100%;
+    background: var(--AllBlack);
+    padding: 16px;
+    border-radius: 5px;
+    &:focus{
+        border: solid 1px var(--Gray);
+    }
+}
+.modal-label  input[type='file']{
+    display: none;
+}
+.modal-label .modal-file {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.modal-label .modal-file svg{
+    font-size: 32px;
+}
+
+.modal-label select, option{
+    background-color: var(--AllBlack);
+    padding: 16px;
+    border-radius: 5px;
+}
+.modal-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+.modal-buttons button{
+    background-color: var(--AllBlack);
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:focus{
+        border: solid 1px var(--White);
+    }
+}
+
+
+
+input[type="range"] {
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 6px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+::-webkit-slider-runnable-track {
+    background: var(--Gray);
+}
+
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 6px;
+    background: #fff;
+    box-shadow: -200px 0 0 200px var(--White);
+    border: 0;
+    }
+
+
+::-moz-range-track {
+    background: var(--Gray);
+}
+
+::-moz-range-thumb {
+    width: 0px;
+    height: 6px;
+    background: #fff;
+    box-shadow: -200px 0 0 200px var(--White);
+    border: 0;
+}

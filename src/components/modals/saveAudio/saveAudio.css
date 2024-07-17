@@ -1,0 +1,50 @@
+.playlist-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+.playlist-ul .playlist-li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.playlist-ul .playlist-li .playlist-details{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.playlist-ul .playlist-li .playlist-details .img{
+    aspect-ratio: 1/1;
+    width: 30px;
+    background-color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+.playlist-ul .playlist-li .label-save{
+    cursor: pointer;
+}
+.playlist-ul .playlist-li .label-save input{
+    display: none;
+}
+.playlist-ul .playlist-li .label-save span{
+    display: block;
+    width: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: var(--Gray);
+    border: solid 1px var(--White);
+}
+
+.playlist-li .label-save input:checked ~ span {
+    background-color: var(--Secundary)
+}

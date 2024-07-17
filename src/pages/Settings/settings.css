@@ -1,0 +1,75 @@
+.settings-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 32px;
+    padding-bottom: 120px; 
+}
+
+.settings-section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.settings-section1 img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.settings-section2, .settings-section3, .settings-section4{
+    width: 100%;
+    background-color: var(--AllBlack);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+}
+.settings-ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 24px;
+}
+.settings-ul li a, .settings-ul li button {
+    width: 100%;
+    padding: 18px 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--Black);
+    }
+}
+.settings-ul li a .icon1, .settings-ul li button .icon1 {
+    background-color: var(--Gray);
+    color: var(--White);
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.settings-ul li a .icon2, .settings-ul li button .icon2{
+    width: 30px;
+    height: 30px;
+}
+.settings-ul li a .icon-text, .settings-ul li button .icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media (min-width:768px){
+    .settings-section2, .settings-section3, .settings-section4{
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 0px auto;
+    }
+}

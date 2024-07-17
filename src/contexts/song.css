@@ -1,0 +1,158 @@
+.song-container{
+    display: flex;
+    background-color: var(--AllBlack);
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 8px 16px;
+}
+
+.audioInfo img{
+    display: none;
+}
+.audioInfo .about-audio{
+    display: flex;
+    width: 100%;
+    justify-content: centers;
+    align-items: end;
+    gap: 4px;
+}
+.audioInfo .about-audio h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.audioInfo .about-audio span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.audioInfo .about-audio p{
+    font-size: 12px;
+}
+
+
+.song_control{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.song_control .slide_control{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 16px;
+}
+.song_control .slide_control input{
+    width: 100%;
+}
+.song_control .slide_control span{
+    font-size: 14px;
+}
+
+
+.song_control .menus{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+.song_control .menus .playlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black);
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+.song_control .menus .controls{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+.desktop-playlist{
+    display: none;
+}
+
+@media (min-width:768px){
+    .song-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 90px);
+        margin-left: 90px;
+        padding: 16px;
+    }
+
+    .audioInfo{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 16px;
+    }
+    .audioInfo img{
+        background-color: var(--gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+        width: 64px;
+        border-radius: 5px;
+    }
+    .audioInfo  .about-audio{
+        flex-direction: column;
+        align-items: start;
+    }
+    .audioInfo  .about-audio span{
+        display: none;
+    }
+
+
+    .song_control{
+        flex-direction: column-reverse;
+    }
+    .song_control .menus svg{
+        font-size: 18px;
+    }
+    .song_control .menus .pause_style{
+        background-color: var(--White);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+    }
+    .song_control .menus .pause_style svg{
+        font-size: 12px;
+        color: var(--AllBlack);
+    }
+    .song_control .menus .playlist{
+        display: none;
+    }
+
+    .desktop-playlist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Black);
+        width: 40px;
+        aspect-ratio: 1/1;
+        border-radius: 5px;
+    }
+}
