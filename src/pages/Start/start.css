@@ -19,7 +19,10 @@
     flex-direction: column;
     gap: 16px;
 }
-
+.start-section1{
+    justify-content: end;
+    align-items: end;
+}
 
 .start-section2 .list-playlist{
     display: flex;
