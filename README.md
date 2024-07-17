@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+ ### English Cast 🇧🇷 🇺🇸
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![Blog](https://img.shields.io/website?label=Deploy&style=for-the-badge&url=https://englishcast.vercel.app)](https://englishcast.vercel.app)
 
-In the project directory, you can run:
+<div>
+    <h2>About 🚨</h2>
+    <p>
+        This is my English Cast project, where you can publish English audios, access audios published by other users, listen to them, manage them in your playlists, and improve your English skills. Audios are classified into proficiency levels of English.
+    </p>
+</div>
+<div>
+    <div>
+        <h2>Tools 🛠</h2>       
+        <img src='https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB' alt='React'/>
+        <img src='https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34' alt='Firebase'/>
+    </div>
+    <br/>
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+    # clone the project
+    $ git clone https://github.com/ferndsgabriel/English-cast.git
+```   
+```bash
+    # install dependencies
+    $ yarn install
+```   
+```bash
+    # install dependencies, if use npm
+    $ npm install
+``` 
+```bash
+    # start Project
+    $ yarn start
+```   
+```bash
+    # start Project, if use npm
+    $ npm run start
+``` 
+<div>
+    <h2>Functions</h2>
+    <ul>
+        <li><b>Register:</b> You can register your account and manage your profile.</li>
+        <li><b>Recover:</b> It's possible to recover your account using your account email.</li>
+        <li><b>Create playlists:</b> You can create playlists and edit or delete them.</li>
+        <li><b>Listen to English audios:</b> You can filter English audios and save them to your playlists or just listen to them.</li>
+        <li><b>Publish audios:</b> You can create your own audio and publish it for everyone to access. You just need an audio file in audio format, a cover image (png, jpeg, or jpg), a name, and an English proficiency level.</li>
+        <li><b>Share your profile or playlist:</b> You can share your profile link or your playlist link with your friends, but they need to be registered.</li>
+    </ul>
+</div>
