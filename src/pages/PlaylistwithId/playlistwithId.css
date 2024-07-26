@@ -29,11 +29,11 @@
 }
 .playlistid-section2 .playlist-info{
     display: flex;
-    align-items: end;
+    align-items: start;
     gap: 32px;
 }
 .playlistid-section2 .playlist-info .img{
-    width: 200px;
+    width: 90px;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
@@ -149,6 +149,9 @@
         width: calc(100% - 90px);
         margin-left: 90px;
         padding: 16px 16px 16px 0px;
+    }
+    .playlistid-section2 .playlist-info .img{
+        width: 200px;
     }
     .playlistid-all{
         border-radius: 10px;
